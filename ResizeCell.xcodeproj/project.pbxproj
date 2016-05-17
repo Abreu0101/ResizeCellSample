@@ -12,6 +12,7 @@
 		EAF8ABE01CEB631B00C61A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF8ABDE1CEB631B00C61A2E /* Main.storyboard */; };
 		EAF8ABE21CEB631B00C61A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAF8ABE11CEB631B00C61A2E /* Assets.xcassets */; };
 		EAF8ABE51CEB631B00C61A2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF8ABE31CEB631B00C61A2E /* LaunchScreen.storyboard */; };
+		EAF8ABF11CEB64AA00C61A2E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF8ABF01CEB64AA00C61A2E /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EAF8ABE11CEB631B00C61A2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAF8ABE41CEB631B00C61A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAF8ABE61CEB631B00C61A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF8ABF01CEB64AA00C61A2E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		EAF8ABD91CEB631B00C61A2E /* ResizeCell */ = {
 			isa = PBXGroup;
 			children = (
-				EAF8ABDA1CEB631B00C61A2E /* AppDelegate.swift */,
+				EAF8ABEE1CEB648A00C61A2E /* Views */,
+				EAF8ABED1CEB648200C61A2E /* Extra Files */,
+				EAF8ABEC1CEB647A00C61A2E /* Controller */,
+			);
+			path = ResizeCell;
+			sourceTree = "<group>";
+		};
+		EAF8ABEC1CEB647A00C61A2E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				EAF8ABDC1CEB631B00C61A2E /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EAF8ABED1CEB648200C61A2E /* Extra Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAF8ABE61CEB631B00C61A2E /* Info.plist */,
+				EAF8ABDA1CEB631B00C61A2E /* AppDelegate.swift */,
+			);
+			name = "Extra Files";
+			sourceTree = "<group>";
+		};
+		EAF8ABEE1CEB648A00C61A2E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAF8ABEF1CEB649400C61A2E /* TableViewCell */,
 				EAF8ABDE1CEB631B00C61A2E /* Main.storyboard */,
 				EAF8ABE11CEB631B00C61A2E /* Assets.xcassets */,
 				EAF8ABE31CEB631B00C61A2E /* LaunchScreen.storyboard */,
-				EAF8ABE61CEB631B00C61A2E /* Info.plist */,
 			);
-			path = ResizeCell;
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EAF8ABEF1CEB649400C61A2E /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EAF8ABF01CEB64AA00C61A2E /* CustomTableViewCell.swift */,
+			);
+			name = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAF8ABF11CEB64AA00C61A2E /* CustomTableViewCell.swift in Sources */,
 				EAF8ABDD1CEB631B00C61A2E /* ViewController.swift in Sources */,
 				EAF8ABDB1CEB631B00C61A2E /* AppDelegate.swift in Sources */,
 			);
